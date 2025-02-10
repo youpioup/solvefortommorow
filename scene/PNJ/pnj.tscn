@@ -19,6 +19,7 @@ shape = SubResource("CircleShape2D_s1ylv")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="textBox" parent="CanvasLayer" instance=ExtResource("3_yv60c")]
+visible = false
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
