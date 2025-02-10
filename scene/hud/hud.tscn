@@ -1,6 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3yxr8n1rmd6v"]
-
-[ext_resource type="Texture2D" uid="uid://cok8038hg0jnl" path="res://icon.svg" id="1_tpmh6"]
+[gd_scene format=3 uid="uid://d3yxr8n1rmd6v"]
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -9,32 +7,3 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="textBox" type="PanelContainer" parent="."]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -264.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="MarginContainer" type="MarginContainer" parent="textBox"]
-layout_mode = 2
-theme_override_constants/margin_left = 40
-theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 40
-theme_override_constants/margin_bottom = 40
-
-[node name="HBoxContainer" type="HBoxContainer" parent="textBox/MarginContainer"]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="textBox/MarginContainer/HBoxContainer"]
-layout_mode = 2
-texture = ExtResource("1_tpmh6")
-expand_mode = 3
-
-[node name="Label" type="Label" parent="textBox/MarginContainer/HBoxContainer"]
-layout_mode = 2
-text = "Salut Kayou!"
