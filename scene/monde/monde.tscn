@@ -4,7 +4,6 @@
 
 [node name="monde" type="Node2D"]
 
-[node name="TileMap" type="TileMap" parent="."]
-format = 2
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
 
 [node name="Kayou" parent="." instance=ExtResource("1_7inf6")]
