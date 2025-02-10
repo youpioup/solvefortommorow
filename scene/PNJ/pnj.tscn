@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://br57wc4oqn1ex"]
+
+[ext_resource type="Texture2D" uid="uid://cok8038hg0jnl" path="res://icon.svg" id="1_2qgng"]
+[ext_resource type="Script" path="res://scene/PNJ/pnj.gd" id="1_7iwym"]
+[ext_resource type="PackedScene" uid="uid://cibc6gawcd0cd" path="res://scene/text_box/text_box.tscn" id="3_yv60c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s1ylv"]
+radius = 192.167
+
+[node name="PNJ" type="Area2D"]
+script = ExtResource("1_7iwym")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2qgng")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_s1ylv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="textBox" parent="CanvasLayer" instance=ExtResource("3_yv60c")]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+
+[editable path="CanvasLayer/textBox"]

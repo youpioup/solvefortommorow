@@ -1,9 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://coahi6218dhr"]
+[gd_scene load_steps=3 format=3 uid="uid://coahi6218dhr"]
 
 [ext_resource type="PackedScene" uid="uid://b5787e3lhnq23" path="res://scene/Kayou/kayou.tscn" id="1_7inf6"]
+[ext_resource type="PackedScene" uid="uid://br57wc4oqn1ex" path="res://scene/PNJ/pnj.tscn" id="2_g26u5"]
 
 [node name="monde" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 
 [node name="Kayou" parent="." instance=ExtResource("1_7inf6")]
+
+[node name="PNJ" parent="." instance=ExtResource("2_g26u5")]
