@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://coahi6218dhr"]
+[gd_scene load_steps=2 format=3 uid="uid://coahi6218dhr"]
 
-[node name="World" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://b5787e3lhnq23" path="res://scene/Kayou/kayou.tscn" id="1_7inf6"]
+
+[node name="monde" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="Kayou" parent="." instance=ExtResource("1_7inf6")]
