@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
-var speed = 500
+@export var speed = 500
+
 func _physics_process(delta: float) -> void:
 	var dir = Vector2.ZERO
 	dir.y = Input.get_axis("avancer", "reculer")
