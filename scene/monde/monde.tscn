@@ -23,6 +23,7 @@ position = Vector2(368, 728)
 
 [node name="PNJ4" parent="." instance=ExtResource("2_g26u5")]
 position = Vector2(1392, 656)
+txt = Array[String](["mort", "à", "Periclès", "et", "à", "sa", "pute", "de", "femme"])
 
 [node name="PNJ5" parent="." instance=ExtResource("2_g26u5")]
 position = Vector2(1184, -40)
