@@ -27,6 +27,12 @@ func show_simple_dialogue():
 	label.text = txt[0]
 	text_box.show()
 
+func show_advenced_dialogue():
+	dialogue_start = true
+	var i = 0
+	label.text = txt[i]
+	text_box.show()
+
 func _process(delta):
 	if dialogue_start && Input.is_action_just_pressed("interagire") && dialogue_pg_nb < txt.size() - 1:
 		print(dialogue_pg_nb)
@@ -35,12 +41,6 @@ func _process(delta):
 		
 		if dialogue_pg_nb == txt.size() - 1:
 			intercat_label.hide()
-
-func show_advenced_dialogue():
-	dialogue_start = true
-	var i = 0
-	label.text = txt[i]
-	text_box.show()
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.name == "Kayou":
