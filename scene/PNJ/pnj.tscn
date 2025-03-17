@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cok8038hg0jnl" path="res://icon.svg" id="1_2qgng"]
 [ext_resource type="Script" path="res://scene/PNJ/pnj.gd" id="1_7iwym"]
-[ext_resource type="Resource" uid="uid://cp3mh8kr7s4ak" path="res://dialogues/tests/dialogue.dialogue" id="2_vxhvr"]
+[ext_resource type="Resource" uid="uid://cp3mh8kr7s4ak" path="res://dialogues/tests/dialogue_test.dialogue" id="2_vxhvr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_s1ylv"]
 radius = 192.167
