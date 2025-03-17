@@ -6,5 +6,6 @@ func _physics_process(delta: float) -> void:
 	var dir = Vector2.ZERO
 	dir.y = Input.get_axis("avancer", "reculer")
 	dir.x = Input.get_axis("gauche", "droite")
+	dir = dir.normalized()
 	velocity = dir * speed
 	move_and_slide()
