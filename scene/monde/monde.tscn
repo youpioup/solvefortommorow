@@ -12,7 +12,6 @@
 
 [node name="PNJ" parent="." instance=ExtResource("2_g26u5")]
 position = Vector2(408, 112)
-txt = "Mouais"
 
 [node name="PNJ2" parent="." instance=ExtResource("2_g26u5")]
 position = Vector2(688, -336)
