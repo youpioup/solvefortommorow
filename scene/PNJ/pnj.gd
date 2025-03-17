@@ -12,6 +12,7 @@ var dialogue_start:bool = false
 var dialogue_pg_nb:int = 0
 
 func _ready():
+	print(txt[0].length())
 	if txt.size() > 1:
 		intercat_label.show()
 	texture_rect.texture = img
