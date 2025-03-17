@@ -29,3 +29,9 @@ expand_mode = 3
 [node name="Label" type="Label" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 text = "Salut Kayou!"
+
+[node name="intercatLabel" type="Label" parent="MarginContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 8
+text = "E ou F pour continuer"

@@ -15,9 +15,10 @@ position = Vector2(408, 112)
 
 [node name="PNJ2" parent="." instance=ExtResource("2_g26u5")]
 position = Vector2(688, -336)
+txt = Array[String](["Salut!", "Mouais"])
 img = ExtResource("3_1ay8y")
 
-[node name="PNJ3" parent="." instance=ExtResource("2_g26u5")]
+[node name="PNJMultiLine" parent="." instance=ExtResource("2_g26u5")]
 position = Vector2(368, 728)
 
 [node name="PNJ4" parent="." instance=ExtResource("2_g26u5")]
