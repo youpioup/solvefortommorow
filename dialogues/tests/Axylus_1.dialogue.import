@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dkgun0dscocl4"
+path="res://.godot/imported/Axylus_1.dialogue-4eceed0c467cec8daf3028528904a729.tres"
+
+[deps]
+
+source_file="res://dialogues/tests/Axylus_1.dialogue"
+dest_files=["res://.godot/imported/Axylus_1.dialogue-4eceed0c467cec8daf3028528904a729.tres"]
+
+[params]
+
+defaults=true
