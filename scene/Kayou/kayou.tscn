@@ -5,12 +5,13 @@
 [ext_resource type="PackedScene" uid="uid://d3yxr8n1rmd6v" path="res://scene/hud/hud.tscn" id="3_cv13p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k2p68"]
-size = Vector2(112, 112)
+size = Vector2(16, 16)
 
 [node name="Kayou" type="CharacterBody2D"]
 script = ExtResource("1_8i3t8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_c8eg6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -22,4 +23,4 @@ shape = SubResource("RectangleShape2D_k2p68")
 metadata/_edit_use_anchors_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.7, 0.7)
+zoom = Vector2(5, 5)

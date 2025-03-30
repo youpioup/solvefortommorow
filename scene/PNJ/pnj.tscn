@@ -1,19 +1,19 @@
 [gd_scene load_steps=5 format=3 uid="uid://br57wc4oqn1ex"]
 
-[ext_resource type="Texture2D" uid="uid://cok8038hg0jnl" path="res://icon.svg" id="1_2qgng"]
 [ext_resource type="Script" path="res://scene/PNJ/pnj.gd" id="1_7iwym"]
 [ext_resource type="Resource" uid="uid://cp3mh8kr7s4ak" path="res://dialogues/tests/dialogue.dialogue" id="2_vxhvr"]
+[ext_resource type="Texture2D" uid="uid://d4acc04gef1kf" path="res://ressources/pnj/pnj01_0001.png" id="3_lu2mb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_s1ylv"]
-radius = 192.167
+radius = 24.0
 
 [node name="PNJ" type="Area2D"]
 script = ExtResource("1_7iwym")
 txt = ExtResource("2_vxhvr")
-img = ExtResource("1_2qgng")
+img = ExtResource("3_lu2mb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_2qgng")
+texture = ExtResource("3_lu2mb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_s1ylv")
